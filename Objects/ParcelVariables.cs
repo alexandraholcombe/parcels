@@ -1,6 +1,6 @@
 namespace Parcel.Objects
 {
-  public class Parcel
+  public class ParcelObject
   {
     private int _length;
     private int _height;
@@ -39,12 +39,12 @@ namespace Parcel.Objects
 
     public int GetWeight()
     {
-      return _Weight;
+      return _weight;
     }
 
     public void SetWeight(int newWeight)
     {
-      _Weight = newWeight;
+      _weight = newWeight;
     }
   }
 }

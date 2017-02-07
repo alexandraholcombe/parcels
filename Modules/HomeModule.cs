@@ -7,12 +7,15 @@ namespace Parcel
   {
     public HomeModule()
     {
-      Get["/"] = _ => {
-        Parcel myParcel = new Parcel();
-        myParcel.SetLength(8);
-        myParcel.SetWidth(7);
-        myParcel.SetHeight(10);
-        myParcel.SetWeight(5);
+      Get["/form"] = _ => {
+        return View["form.cshtml"];
+      };
+      Get["/shipping"] = _ => {
+        ParcelObject myParcel = new ParcelObject();
+        myParcel.SetLength(Request.Query["length"]);
+        myParcel.SetWidth(Request.Query["width"]);
+        myParcel.SetHeight(Request.Query["height"]);
+        myParcel.SetWeight(Request.Query["weight"]);
         return View["shipping.cshtml", myParcel];
       };
     }
