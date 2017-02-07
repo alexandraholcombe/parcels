@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ship a Parcel</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body>
+  <h1>Please enter the dimensions and weight of your package.</h1>
+  <form action="/shipping">
+    <div class="form-group">
+      <label for="length">Length</label>
+      <input type="text" name="length" id="length" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="width">Width</label>
+      <input type="text" name="width" id="width" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="height">Height</label>
+      <input type="text" name="height" id="height" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="weight">weight</label>
+      <input type="text" name="weight" id="weight" class="form-control">
+    </div>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+
+</body>
+</html>
